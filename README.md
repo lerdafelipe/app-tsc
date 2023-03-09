@@ -2,9 +2,9 @@
 
 - [x] Inicializar el proyecto con vite.
 - [x] Añadir Linter para Typescript y React
-- [] Añadir estilos al TODO
+- [x] Añadir estilos al TODO
 - [x] Listar todos los TODOs
-- [] Poder borrar un TODO
+- [x] Poder borrar un TODO
 - [] Marcar TODO como completado
 - [] Añadir forma de filtrar TODOs (Footer)
 - [] Mostrar número de TODOs pendientes (Footer)
