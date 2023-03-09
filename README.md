@@ -1,9 +1,9 @@
 ## Crear un TODO app con Typescript
 
 - [x] Inicializar el proyecto con vite.
-- [] Añadir Linter para Typescript y React
+- [x] Añadir Linter para Typescript y React
 - [] Añadir estilos al TODO
-- [] Listar todos los TODOs
+- [x] Listar todos los TODOs
 - [] Poder borrar un TODO
 - [] Marcar TODO como completado
 - [] Añadir forma de filtrar TODOs (Footer)
