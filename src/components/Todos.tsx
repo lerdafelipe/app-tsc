@@ -1,13 +1,14 @@
 import React from 'react'
-import { type TodoId, type ListTodo } from '../types.d'
+import { type TodoId, type ListTodo, type TodoType } from '../types.d'
 import Todo from './Todo'
 
 interface Props {
   todos: ListTodo
+  changeComplete: ({ id, completed }: Pick<TodoType, 'id' | 'completed'>) => void
   deleteTodo: ({ id }: TodoId) => void
 }
 
-const Todos: React.FC<Props> = ({ todos, deleteTodo }) => {
+const Todos: React.FC<Props> = ({ todos, deleteTodo, changeComplete }) => {
   return (
       <ul className='todo-list'>
         { todos.map(todo => {
@@ -19,7 +20,8 @@ const Todos: React.FC<Props> = ({ todos, deleteTodo }) => {
                 title={todo.title}
                 completed={todo.completed}
                 id={todo.id}
-                deleteTodo={deleteTodo} />
+                deleteTodo={deleteTodo}
+                changeComplete={changeComplete} />
             </li>)
         })}
       </ul>
