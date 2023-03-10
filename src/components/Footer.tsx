@@ -1,12 +1,10 @@
 import React from 'react'
-import { type filterValue, type ListTodo } from '../types.d'
+import { type filterValue } from '../types.d'
 import Filters from './Filters'
 
 interface Props {
   filterSelected: filterValue
   activeCount: number
-  taskQuantity: number
-  todos: ListTodo
   onFilterChange: (filter: filterValue) => void
   handleDeleteCompleted: () => void
 }
